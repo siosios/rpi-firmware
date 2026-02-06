@@ -211,6 +211,8 @@ alias crypto-authencesn authencesn
 alias authencesn authencesn
 alias crypto-lz4 lz4
 alias lz4 lz4
+alias crypto-lz4hc lz4hc
+alias lz4hc lz4hc
 alias crypto-xxhash64-generic xxhash_generic
 alias xxhash64-generic xxhash_generic
 alias crypto-xxhash64 xxhash_generic
@@ -543,6 +545,18 @@ alias platform:clk-hifiberry-dachd clk_hifiberry_dachd
 alias i2c:dachd-clk clk_hifiberry_dachd
 alias of:N*T*Chifiberry,dachd-clkC* clk_hifiberry_dachd
 alias of:N*T*Chifiberry,dachd-clk clk_hifiberry_dachd
+alias of:N*T*Csilabs,si5351cC* clk_si5351
+alias of:N*T*Csilabs,si5351c clk_si5351
+alias of:N*T*Csilabs,si5351bC* clk_si5351
+alias of:N*T*Csilabs,si5351b clk_si5351
+alias of:N*T*Csilabs,si5351a-msopC* clk_si5351
+alias of:N*T*Csilabs,si5351a-msop clk_si5351
+alias of:N*T*Csilabs,si5351aC* clk_si5351
+alias of:N*T*Csilabs,si5351a clk_si5351
+alias i2c:si5351c clk_si5351
+alias i2c:si5351b clk_si5351
+alias i2c:si5351a-msop clk_si5351
+alias i2c:si5351a clk_si5351
 alias platform:reg-fixed-voltage fixed
 alias of:N*T*Cregulator-fixed-domainC* fixed
 alias of:N*T*Cregulator-fixed-domain fixed

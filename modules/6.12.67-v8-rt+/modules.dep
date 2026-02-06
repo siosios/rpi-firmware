@@ -137,6 +137,7 @@ kernel/crypto/deflate.ko.xz:
 kernel/crypto/authenc.ko.xz: kernel/crypto/crypto_null.ko.xz
 kernel/crypto/authencesn.ko.xz: kernel/crypto/authenc.ko.xz kernel/crypto/crypto_null.ko.xz
 kernel/crypto/lz4.ko.xz: kernel/lib/lz4/lz4_compress.ko.xz
+kernel/crypto/lz4hc.ko.xz: kernel/lib/lz4/lz4hc_compress.ko.xz
 kernel/crypto/xxhash_generic.ko.xz:
 kernel/crypto/drbg.ko.xz:
 kernel/crypto/jitterentropy_rng.ko.xz:
@@ -212,6 +213,7 @@ kernel/drivers/video/fbdev/ssd1307fb.ko.xz: kernel/drivers/video/backlight/backl
 kernel/drivers/video/fbdev/rpisense-fb.ko.xz:
 kernel/drivers/clk/clk-hifiberry-dacpro.ko.xz:
 kernel/drivers/clk/clk-hifiberry-dachd.ko.xz: kernel/drivers/base/regmap/regmap-i2c.ko.xz
+kernel/drivers/clk/clk-si5351.ko.xz: kernel/drivers/base/regmap/regmap-i2c.ko.xz
 kernel/drivers/regulator/arizona-ldo1.ko.xz:
 kernel/drivers/regulator/arizona-micsupp.ko.xz: kernel/sound/soc/snd-soc-core.ko.xz kernel/sound/core/snd-compress.ko.xz kernel/sound/core/snd-pcm-dmaengine.ko.xz kernel/sound/core/snd-pcm.ko.xz kernel/sound/core/snd-timer.ko.xz kernel/sound/core/snd.ko.xz
 kernel/drivers/regulator/rpi-panel-attiny-regulator.ko.xz: kernel/drivers/video/backlight/backlight.ko.xz kernel/drivers/base/regmap/regmap-i2c.ko.xz
@@ -378,6 +380,7 @@ kernel/drivers/net/wireless/mediatek/mt76/mt76x2/mt76x2u.ko.xz: kernel/drivers/n
 kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko.xz: kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt76.ko.xz kernel/net/mac80211/mac80211.ko.xz kernel/lib/crypto/libarc4.ko.xz kernel/net/wireless/cfg80211.ko.xz kernel/net/rfkill/rfkill.ko.xz
 kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko.xz: kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt76.ko.xz kernel/net/mac80211/mac80211.ko.xz kernel/lib/crypto/libarc4.ko.xz kernel/net/wireless/cfg80211.ko.xz kernel/net/rfkill/rfkill.ko.xz
 kernel/drivers/net/wireless/mediatek/mt76/mt7925/mt7925-common.ko.xz: kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt76.ko.xz kernel/net/mac80211/mac80211.ko.xz kernel/lib/crypto/libarc4.ko.xz kernel/net/wireless/cfg80211.ko.xz kernel/net/rfkill/rfkill.ko.xz
+kernel/drivers/net/wireless/mediatek/mt76/mt7925/mt7925e.ko.xz: kernel/drivers/net/wireless/mediatek/mt76/mt7925/mt7925-common.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt76.ko.xz kernel/net/mac80211/mac80211.ko.xz kernel/lib/crypto/libarc4.ko.xz kernel/net/wireless/cfg80211.ko.xz kernel/net/rfkill/rfkill.ko.xz
 kernel/drivers/net/wireless/mediatek/mt76/mt7925/mt7925u.ko.xz: kernel/drivers/net/wireless/mediatek/mt76/mt7925/mt7925-common.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko.xz kernel/drivers/net/wireless/mediatek/mt76/mt76.ko.xz kernel/net/mac80211/mac80211.ko.xz kernel/lib/crypto/libarc4.ko.xz kernel/net/wireless/cfg80211.ko.xz kernel/net/rfkill/rfkill.ko.xz
 kernel/drivers/net/wireless/ralink/rt2x00/rt2x00lib.ko.xz: kernel/net/mac80211/mac80211.ko.xz kernel/lib/crypto/libarc4.ko.xz kernel/net/wireless/cfg80211.ko.xz kernel/net/rfkill/rfkill.ko.xz
 kernel/drivers/net/wireless/ralink/rt2x00/rt2x00usb.ko.xz: kernel/drivers/net/wireless/ralink/rt2x00/rt2x00lib.ko.xz kernel/net/mac80211/mac80211.ko.xz kernel/lib/crypto/libarc4.ko.xz kernel/net/wireless/cfg80211.ko.xz kernel/net/rfkill/rfkill.ko.xz
@@ -1502,6 +1505,7 @@ kernel/sound/soc/bcm/snd-soc-hifiberry-dacplushd.ko.xz: kernel/sound/soc/snd-soc
 kernel/sound/soc/bcm/snd-soc-hifiberry-dacplusadc.ko.xz: kernel/sound/soc/snd-soc-core.ko.xz kernel/sound/core/snd-compress.ko.xz kernel/sound/core/snd-pcm-dmaengine.ko.xz kernel/sound/core/snd-pcm.ko.xz kernel/sound/core/snd-timer.ko.xz kernel/sound/core/snd.ko.xz
 kernel/sound/soc/bcm/snd-soc-hifiberry-dacplusadcpro.ko.xz: kernel/sound/soc/snd-soc-core.ko.xz kernel/sound/core/snd-compress.ko.xz kernel/sound/core/snd-pcm-dmaengine.ko.xz kernel/sound/core/snd-pcm.ko.xz kernel/sound/core/snd-timer.ko.xz kernel/sound/core/snd.ko.xz
 kernel/sound/soc/bcm/snd-soc-hifiberry-dacplusdsp.ko.xz: kernel/sound/soc/snd-soc-core.ko.xz kernel/sound/core/snd-compress.ko.xz kernel/sound/core/snd-pcm-dmaengine.ko.xz kernel/sound/core/snd-pcm.ko.xz kernel/sound/core/snd-timer.ko.xz kernel/sound/core/snd.ko.xz
+kernel/sound/soc/bcm/snd-soc-hifiberry-studio-dac8x.ko.xz: kernel/sound/soc/snd-soc-core.ko.xz kernel/sound/core/snd-compress.ko.xz kernel/sound/core/snd-pcm-dmaengine.ko.xz kernel/sound/core/snd-pcm.ko.xz kernel/sound/core/snd-timer.ko.xz kernel/sound/core/snd.ko.xz kernel/drivers/base/regmap/regmap-i2c.ko.xz
 kernel/sound/soc/bcm/snd-soc-justboom-both.ko.xz: kernel/sound/soc/snd-soc-core.ko.xz kernel/sound/core/snd-compress.ko.xz kernel/sound/core/snd-pcm-dmaengine.ko.xz kernel/sound/core/snd-pcm.ko.xz kernel/sound/core/snd-timer.ko.xz kernel/sound/core/snd.ko.xz
 kernel/sound/soc/bcm/snd-soc-justboom-dac.ko.xz: kernel/sound/soc/snd-soc-core.ko.xz kernel/sound/core/snd-compress.ko.xz kernel/sound/core/snd-pcm-dmaengine.ko.xz kernel/sound/core/snd-pcm.ko.xz kernel/sound/core/snd-timer.ko.xz kernel/sound/core/snd.ko.xz
 kernel/sound/soc/bcm/snd-soc-rpi-cirrus.ko.xz: kernel/sound/soc/snd-soc-core.ko.xz kernel/sound/core/snd-compress.ko.xz kernel/sound/core/snd-pcm-dmaengine.ko.xz kernel/sound/core/snd-pcm.ko.xz kernel/sound/core/snd-timer.ko.xz kernel/sound/core/snd.ko.xz

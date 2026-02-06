@@ -137,6 +137,7 @@ kernel/crypto/deflate.ko
 kernel/crypto/authenc.ko
 kernel/crypto/authencesn.ko
 kernel/crypto/lz4.ko
+kernel/crypto/lz4hc.ko
 kernel/crypto/xxhash_generic.ko
 kernel/crypto/drbg.ko
 kernel/crypto/jitterentropy_rng.ko
@@ -212,6 +213,7 @@ kernel/drivers/video/fbdev/ssd1307fb.ko
 kernel/drivers/video/fbdev/rpisense-fb.ko
 kernel/drivers/clk/clk-hifiberry-dacpro.ko
 kernel/drivers/clk/clk-hifiberry-dachd.ko
+kernel/drivers/clk/clk-si5351.ko
 kernel/drivers/regulator/arizona-ldo1.ko
 kernel/drivers/regulator/arizona-micsupp.ko
 kernel/drivers/regulator/rpi-panel-attiny-regulator.ko
@@ -378,6 +380,7 @@ kernel/drivers/net/wireless/mediatek/mt76/mt76x2/mt76x2u.ko
 kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko
 kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko
 kernel/drivers/net/wireless/mediatek/mt76/mt7925/mt7925-common.ko
+kernel/drivers/net/wireless/mediatek/mt76/mt7925/mt7925e.ko
 kernel/drivers/net/wireless/mediatek/mt76/mt7925/mt7925u.ko
 kernel/drivers/net/wireless/ralink/rt2x00/rt2x00lib.ko
 kernel/drivers/net/wireless/ralink/rt2x00/rt2x00usb.ko
@@ -1502,6 +1505,7 @@ kernel/sound/soc/bcm/snd-soc-hifiberry-dacplushd.ko
 kernel/sound/soc/bcm/snd-soc-hifiberry-dacplusadc.ko
 kernel/sound/soc/bcm/snd-soc-hifiberry-dacplusadcpro.ko
 kernel/sound/soc/bcm/snd-soc-hifiberry-dacplusdsp.ko
+kernel/sound/soc/bcm/snd-soc-hifiberry-studio-dac8x.ko
 kernel/sound/soc/bcm/snd-soc-justboom-both.ko
 kernel/sound/soc/bcm/snd-soc-justboom-dac.ko
 kernel/sound/soc/bcm/snd-soc-rpi-cirrus.ko

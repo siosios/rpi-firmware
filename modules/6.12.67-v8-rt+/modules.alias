@@ -293,6 +293,8 @@ alias crypto-authencesn authencesn
 alias authencesn authencesn
 alias crypto-lz4 lz4
 alias lz4 lz4
+alias crypto-lz4hc lz4hc
+alias lz4hc lz4hc
 alias crypto-xxhash64-generic xxhash_generic
 alias xxhash64-generic xxhash_generic
 alias crypto-xxhash64 xxhash_generic
@@ -627,6 +629,18 @@ alias platform:clk-hifiberry-dachd clk_hifiberry_dachd
 alias i2c:dachd-clk clk_hifiberry_dachd
 alias of:N*T*Chifiberry,dachd-clkC* clk_hifiberry_dachd
 alias of:N*T*Chifiberry,dachd-clk clk_hifiberry_dachd
+alias of:N*T*Csilabs,si5351cC* clk_si5351
+alias of:N*T*Csilabs,si5351c clk_si5351
+alias of:N*T*Csilabs,si5351bC* clk_si5351
+alias of:N*T*Csilabs,si5351b clk_si5351
+alias of:N*T*Csilabs,si5351a-msopC* clk_si5351
+alias of:N*T*Csilabs,si5351a-msop clk_si5351
+alias of:N*T*Csilabs,si5351aC* clk_si5351
+alias of:N*T*Csilabs,si5351a clk_si5351
+alias i2c:si5351c clk_si5351
+alias i2c:si5351b clk_si5351
+alias i2c:si5351a-msop clk_si5351
+alias i2c:si5351a clk_si5351
 alias platform:madera-ldo1 arizona_ldo1
 alias platform:arizona-ldo1 arizona_ldo1
 alias platform:madera-micsupp arizona_micsupp
@@ -2686,6 +2700,8 @@ alias usb:v0846p9065d*dc*dsc*dp*icFFiscFFipFFin* mt7921u
 alias usb:v0846p9060d*dc*dsc*dp*icFFiscFFipFFin* mt7921u
 alias usb:v3574p6211d*dc*dsc*dp*icFFiscFFipFFin* mt7921u
 alias usb:v0E8Dp7961d*dc*dsc*dp*icFFiscFFipFFin* mt7921u
+alias pci:v000014C3d00000717sv*sd*bc*sc*i* mt7925e
+alias pci:v000014C3d00007925sv*sd*bc*sc*i* mt7925e
 alias usb:v0846p9072d*dc*dsc*dp*icFFiscFFipFFin* mt7925u
 alias usb:v0E8Dp7925d*dc*dsc*dp*icFFiscFFipFFin* mt7925u
 alias usb:v5A57p0260d*dc*dsc*dp*ic*isc*ip*in* rt2500usb
@@ -13601,6 +13617,8 @@ alias of:N*T*Chifiberry,hifiberry-dacplusadcproC* snd_soc_hifiberry_dacplusadcpr
 alias of:N*T*Chifiberry,hifiberry-dacplusadcpro snd_soc_hifiberry_dacplusadcpro
 alias of:N*T*Chifiberry,dacplusdspC* snd_soc_hifiberry_dacplusdsp
 alias of:N*T*Chifiberry,dacplusdsp snd_soc_hifiberry_dacplusdsp
+alias of:N*T*Chifiberry,hifiberry-studio-dac8xC* snd_soc_hifiberry_studio_dac8x
+alias of:N*T*Chifiberry,hifiberry-studio-dac8x snd_soc_hifiberry_studio_dac8x
 alias of:N*T*Cjustboom,justboom-bothC* snd_soc_justboom_both
 alias of:N*T*Cjustboom,justboom-both snd_soc_justboom_both
 alias of:N*T*Cjustboom,justboom-dacC* snd_soc_justboom_dac
